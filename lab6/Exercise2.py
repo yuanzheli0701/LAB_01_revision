@@ -74,6 +74,7 @@ class SocialNetwork:
     def find_isolated_users(self):
         return [u for u in self.all_users if len(self.adj_list[u]) == 0]
 
+
 if __name__ == "__main__":
     network = SocialNetwork(["Alice", "Bob", "Charlie", "David", "Eve", "Frank"])
     network.add_friendship("Alice", "Bob")
